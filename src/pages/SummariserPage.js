@@ -4,6 +4,8 @@ import CreateIcon from "@material-ui/icons/Create";
 import Button from "@material-ui/core/Button";
 import { withStyles } from '@material-ui/core/styles';
 import {Link} from "react-router-dom";
+import LinearDeterminate from "../components/linear-determinate";
+import AttachFileIcon from "@material-ui/icons/AttachFile";
 
 const styles = theme => ({
 	button: {
@@ -38,7 +40,20 @@ const styles = theme => ({
 class SummariserPage extends Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			selectedFile: null,
+			loaded: 0
+		}
 	}
+
+	handleSelectedFile = (e) => {
+		debugger;
+		this.setState({
+			selectedFile: e.target.files[0],
+			loaded: 0
+		});
+	}
+
 	render() {
 		const {classes} = this.props;
 		return <div>
@@ -52,10 +67,26 @@ class SummariserPage extends Component {
 				<div className={classes.ORTextStyles}>
 					OR
 				</div>
-				<Button size="large" variant="contained" color="default" className={classes.button}>
-					Upload
+				<input
+					accept="text/plain"
+					className={classes.input}
+					style={{ display: 'none' }}
+					id="raised-button-file"
+					multiple
+					type="file"
+					onChange={(e) => this.handleSelectedFile(e)}
+				/>
+				<label htmlFor="raised-button-file">
+					<Button size="large" variant="contained" component="span" className={classes.button}>
+						Choose File
+						<AttachFileIcon className={classes.rightIcon} />
+					</Button>
+				</label>
+				<Button size="large" variant="contained" component="span" className={classes.button}>
+					Upload File
 					<CloudUploadIcon className={classes.rightIcon} />
 				</Button>
+				<LinearDeterminate />
 			</div>
 		</div>;
 	}
