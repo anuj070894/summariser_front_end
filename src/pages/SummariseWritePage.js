@@ -37,6 +37,33 @@ const styles = theme => ({
 });
 
 class SummariseWritePage extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			contentTextField: "",
+			titleTextField: ""
+		};
+	}
+
+	setContentField = (e) => {
+		this.setState({
+			contentTextField: e.target.value
+		});
+	}
+
+	setTitleField = (e) => {
+		this.setState({
+			titleTextField: e.target.value
+		});
+	}
+
+	clearTextFields = () => {
+		this.setState({
+			contentTextField: "",
+			titleTextField: ""
+		});
+	}
+
 	render() {
 		const {classes} = this.props;
 		return <div className={classes.summariseWritePageContainer}>
@@ -52,6 +79,8 @@ class SummariseWritePage extends Component {
 						shrink: true,
 					}}
 					className={classes.titleTextField}
+					value={this.state.titleTextField}
+					onChange={(e) => this.setTitleField(e)}
 				/>
 			</div>
 			<div className={classes.textFieldContainer}>
@@ -64,10 +93,12 @@ class SummariseWritePage extends Component {
 					margin="normal"
 					variant="filled"
 					rows="20"
+					value={this.state.contentTextField}
+					onChange={(e) => this.setContentField(e)}
 				/>
 			</div>
 			<div>
-				<Button size="large" variant="contained" color="default" className={classes.button}>
+				<Button size="large" variant="contained" color="default" className={classes.button} onClick={() => this.clearTextFields()}>
 					Clear
 				</Button>
 				<Button size="large" variant="contained" color="default" className={classes.button}>
