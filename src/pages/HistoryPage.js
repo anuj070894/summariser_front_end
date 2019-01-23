@@ -1,9 +1,17 @@
 import React, {Component} from "react";
+import {withStyles} from "@material-ui/core/styles";
 
-class HistoryPage extends Component {
-	render() {
-		return <div>History Page</div>;
+const styles = {
+	historyPageContainer: {
+		marginTop: 70
 	}
 }
 
-export default HistoryPage;
+class HistoryPage extends Component {
+	render() {
+		const {classes} = this.props;
+		return <div className={classes.historyPageContainer}>History Page</div>;
+	}
+}
+
+export default withStyles(styles)(HistoryPage);

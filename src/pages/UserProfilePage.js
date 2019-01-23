@@ -1,9 +1,17 @@
 import React, {Component} from "react";
+import {withStyles} from "@material-ui/core/styles";
 
-class UserProfilePage extends Component {
-	render() {
-		return <div>User Profile</div>;
+const styles = {
+	userProfilePageContainer: {
+		marginTop: 70
 	}
 }
 
-export default UserProfilePage;
+class UserProfilePage extends Component {
+	render() {
+		const {classes} = this.props;
+		return <div className={classes.userProfilePageContainer}>User Profile</div>;
+	}
+}
+
+export default withStyles(styles)(UserProfilePage);

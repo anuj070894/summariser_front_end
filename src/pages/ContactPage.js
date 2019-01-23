@@ -1,9 +1,17 @@
 import React, {Component} from "react";
+import {withStyles} from "@material-ui/core/styles";
+
+const styles = {
+	contactPageContainer: {
+		marginTop: 70
+	}
+};
 
 class ContactPage extends Component {
 	render() {
-		return <div>Contact Page</div>;
+		const {classes} = this.props;
+		return <div className={classes.contactPageContainer}>Contact Page</div>;
 	}
 }
 
-export default ContactPage;
+export default withStyles(styles)(ContactPage);

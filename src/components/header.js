@@ -13,7 +13,7 @@ import ContactIcon from "@material-ui/icons/ContactSupport";
 
 const styles = {
   root: {
-    flexGrow: 1
+	flexGrow: 1
   },
   grow: {
     flexGrow: 1
@@ -37,7 +37,7 @@ class Header extends Component {
 	const { classes, pageName } = this.props;
 	return (
 		<div className={classes.root}>
-		<AppBar position="static">
+		<AppBar position="fixed">
 			<Toolbar>
 				<MenuItems />
 				<Typography variant="h6" color="inherit" className={classes.grow}>

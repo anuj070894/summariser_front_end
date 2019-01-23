@@ -1,9 +1,17 @@
 import React, {Component} from "react";
+import {withStyles} from "@material-ui/core/styles";
 
-class AboutPage extends Component {
-	render() {
-		return <div>About Page</div>;
+const styles = {
+	aboutPageContainer: {
+		marginTop: 70
 	}
 }
 
-export default AboutPage;
+class AboutPage extends Component {
+	render() {
+		const {classes} = this.props;
+		return <div className={classes.aboutPageContainer}>About Page</div>;
+	}
+}
+
+export default withStyles(styles)(AboutPage);
