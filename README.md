@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Summariser**
 
-## Available Scripts
+Version 0.1
 
-In the project directory, you can run:
+Workflow:
+1. Input from user in the form of text or doc file.
+2. Grammar check and correction (suggesting changes or directly making the required changes for the user, latter being the preferred option)
+3. Providing the output file to the user in the form of doc file
 
-### `npm start`
+**Node.js Instructions**
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Download **Node v8.11.3 (LTS)|Node.js for Windows 64bit** from the browser
+1. Install the software on your device
+1. Open Command Prompt on the screen
+1. Open the directory in cmd prompt where the desired file/folder is stored (C:Documents\Github\Summariser)
+1. Check for the Node;js and npm version (node -v , npm -v)
+1. Install npm (npm install)
+1. Start npm (npm start)
+1. The application will open in the browser
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+**Github Instructions**
 
-### `npm test`
+1. Download **Github for desktop** from the browser
+1. Install the application on your device
+1. Sign in with your github account
+1. Clone a repo from internet
+1. Enter the URL of the repo to clone and store it in your desired location
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Visual Studio Code Instructions**
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Open the folder in Visual code
+1. Open Readme.md file
+1. Install **markdown preview github** exension
+1. Open preview to the side (Search for *preview* in the seach bar; press Shift+Ctrl+P to open search bar)
+1. Start documenting
