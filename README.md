@@ -32,4 +32,14 @@ Workflow:
 1. Open Readme.md file
 1. Install **markdown preview github** exension
 1. Open preview to the side (Search for *preview* in the seach bar; press Shift+Ctrl+P to open search bar)
-1. Start documenting
+1. Start documenting; Syntax: [Github - Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+**Resources**
+
+*Books*
+* **[Natural Language Processing with Python](https://www.nltk.org/book/)** - *by Steven Bird*
+Detailed introduction to Natural Language Processing (NLP) and Natural Language Toolkit (NLTK), based on Python
+
+* **Graph-Based Natural Language Processing and Information Retrieval** - *by Rada Mihalcea*
+Description of the use of graph-based algorithms for NLP and information retrieval; topics: **lexical semantics, text summarization, text mining, ontology construction, text classification, and text retrieval**
+
